@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind Portfolio</title>
+        <link rel="stylesheet" href="../dist/output.css">
+        <link rel="stylesheet" href="../dist/custom.css">
+        <link rel="icon" type="image/x-icon" href="../assets/image/appgrade.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="body" class="bg-gray-100">
+        
+        <nav class="sticky top-0 z-50 bg-gray-100 shadow-md flex items-center justify-between py-4 px-4">
+
+            <img src="../assets/image/appgrade.png" alt="Logo" class="h-12 w-auto">
+        
+            <div class="md:hidden">
+
+                <button id="menu-btn" class="text-gray-700 hover:text-customrcolor2 focus:outline-none">
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+
+                    </svg>
+
+                </button>
+
+            </div>
+        
+            <div id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 absolute md:static top-full right-0 w-full md:w-auto bg-white md:bg-transparent md:shadow-none shadow-md p-4 md:p-0">
+
+                <a href="#body"><button id="home-btn" class="w-full text-right px-4 py-2 md:px-6 md:py-3 bg-gray-100 font-medium text-customcolor4 text-sm rounded-md hover:bg-customcolor4 hover:text-white transition ease-linear duration-500">Home</button></a>
+
+                <a href="#portfolio"><button id="portfolio-btn" class="w-full text-right px-4 py-2 md:px-6 md:py-3 bg-gray-100 font-medium text-customcolor4 text-sm rounded-md hover:bg-customcolor4 hover:text-white transition ease-linear duration-500">Portfolio</button></a>
+
+                <a href="#education"><button id="education-btn" class="w-full text-right px-4 py-2 md:px-6 md:py-3 bg-gray-100 font-medium text-customcolor4 text-sm rounded-md hover:bg-customcolor4 hover:text-white transition ease-linear duration-500">Education</button></a>
+
+                <a href="#experience"><button id="experience-btn" class="w-full text-right px-4 py-2 md:px-6 md:py-3 bg-gray-100 font-medium text-customcolor4 text-sm rounded-md hover:bg-customcolor4 hover:text-white transition ease-linear duration-500">Experience</button></a>
+
+                <a href="#achievements"><button id="achievements-btn" class="w-full text-right px-4 py-2 md:px-6 md:py-3 bg-gray-100 font-medium text-customcolor4 text-sm rounded-md hover:bg-customcolor4 hover:text-white transition ease-linear duration-500">Achievements</button></a>
+
+                <a href="#contact"><button id="contact-btn" class="w-full text-right px-4 py-2 md:px-6 md:py-3 bg-gray-100 font-medium text-customcolor4 text-sm rounded-md hover:bg-customcolor4 hover:text-white transition ease-linear duration-500">Contact</button></a>
+
+            </div>
+
+        </nav>
+        
+
+        <section id="home" class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+        
+                <div class="flex flex-col md:flex-row items-center">
+
+                    <div class="flex-shrink-0 md:mr-8 mb-4 md:mb-0">
+
+                        <img src="../assets/image/Me.png" alt="Image" class="w-48 h-48 md:w-64 md:h-64 rounded-lg object-cover">
+
+                    </div>
+
+                    <div class="text-center md:text-left">
+
+                        <h6 class="font-medium text-customcolor3 text-lg md:text-2xl uppercase mb-4">Karl Bastian Cunanan Lacap</h6>
+
+                        <h1 class="font-normal text-customcolor4 text-4xl md:text-7xl leading-none mb-4">Backend Developer</h1>
+
+                        <p class="font-normal text-customcolor3 text-md md:text-xl mb-8">I have a passion for backend development. I enjoy creating software that makes life easier for people.</p>
+
+                        <a href="#" id="download" class="w-10 px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-customcolor4 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Download CV</a>
+
+                    </div>
+
+                </div>
+        
+                <div class="flex flex-wrap justify-center items-center space-x-4 mt-10 pt-4">
+
+                    <img src="../assets/image/icons8-html-240.png" alt="html" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-100ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-css-logo-240.png" alt="css" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-200ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-javascript-240.png" alt="js" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-300ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-php-240.png" alt="php" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-400ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-tailwind-css-240.png" alt="tailwind" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-500ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-java-240.png" alt="java" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-600ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-python-240.png" alt="python" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-700ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-nodejs-240.png" alt="node" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-800ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-typescript-240.png" alt="typescript" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-900ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-angularjs-240.png" alt="angular" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-1000ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-react-240.png" alt="react" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-1100ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-laravel-240.png" alt="laravel" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-1200ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-mysql-240.png" alt="sql" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-1300ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-postgres-240.png" alt="postgres" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-1400ms hover:scale-110">
+
+                    <img src="../assets/image/icons8-mongodb-240.png" alt="mongodb" class="pt-4 w-12 h-12 md:w-16 md:h-16 object-contain animate-slide-in-1500ms hover:scale-110">
+
+                </div>
+        
+            </div>
+
+        </section>
+        
+        
+        
+
+
+        <section class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md shadow-2xl border-2 border-customcolor4">
+
+                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
+
+                            <ion-icon size="large" class="text-customcolor4" name="analytics-outline"></ion-icon>
+
+                        </div>
+
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">High efficiency</h4>
+
+                        <p class="font-normal text-customcolor3 text-md">Sometimes they call me mahoraga the way I quickly adapt to things.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 px-8 py-10 rounded-md shadow-2xl border-2 border-customcolor4">
+
+                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
+
+                            <ion-icon size="large" class="text-customcolor4" name="terminal-outline"></ion-icon>
+
+                        </div>
+
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">Library hunter</h4>
+
+                        <p class="font-normal text-customcolor3 text-md">As I learn more about development I find myself having fun using different libraries.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 px-8 py-10 rounded-md shadow-2xl border-2 border-customcolor4">
+
+                        <div class="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
+
+                            <ion-icon size="large" class="text-customcolor4" name="code-outline"></ion-icon>
+
+                        </div>
+
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">Successful side projects</h4>
+
+                        <p class="font-normal text-customcolor3 text-md">I can confidently say that I am a good project manager.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="portfolio" class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="flex flex-col lg:flex-row justify-between">
+                    <div class="mb-10 lg:mb-0">
+                        <h1 class="font-medium text-customcolor4 text-3xl md:text-4xl mb-5">Portfolio</h1>
+
+                        <p class="font-normal text-customcolor3 text-xs md:text-base">I have brought here my biggest and favorite works <br> as a Gordon College Student.</p>
+                    </div>
+
+                    <div class="space-y-24">
+                        <div class="flex space-x-6">
+                            <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl">01</h1>
+
+                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                            <div>
+                                <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl mb-5">Library Management System</h1>
+
+                                <p class="font-normal text-customcolor3 text-sm md:text-base">A Computer Programming 2 project<br> This is the first software I've ever developed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-6">
+                            <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl">02</h1>
+
+                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                            <div>
+                                <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl mb-5">Swiftcart</h1>
+
+                                <p class="font-normal text-customcolor3 text-sm md:text-base">An E - commerce system <br> A solo project to test my limits in OOP.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-6">
+                            <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl">03</h1>
+
+                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                            <div>
+                                <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl mb-5">GCACO</h1>
+
+                                <p class="font-normal text-customcolor3 text-sm md:text-base">An Alumni tracer study system. <br> This is the system that brings out the leadership I never thought that I am.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-6">
+                            <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl">04</h1>
+
+                            <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                            <div>
+                                <h1 class="font-normal text-customcolor4 text-3xl md:text-4xl mb-5">Chat Me!</h1>
+
+                                <p class="font-normal text-customcolor3 text-sm md:text-base">A real-time messaging app. <br> This is a very special assesment that only I was able to experience.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="education" class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <h1 class="font-medium text-customcolor4 text-3xl md:text-4xl mb-5">Education</h1>
+
+                <p class="font-normal text-customcolor3 text-xs md:text-base mb-20">Below is a summary of the places I studied</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">2009 – 2011</h4>
+
+                        <p class="font-normal text-customcolor3 text-md mb-4">Felipe Calderon Elementary School</p>
+
+                        <div class="relative">
+                            <h6 class="font-semibold text-customcolor3 text-md relative z-10"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">See the place here</a></h6>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">2011 – 2013</h4>
+
+                        <p class="font-normal text-customcolor3 text-md mb-4">Caalibangbangan Elementary School.</p>
+
+                        <div class="relative">
+                            <h6 class="font-semibold text-customcolor3 text-md relative z-10"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">See the place here</a></h6>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">2013 – 2014</h4>
+
+                        <p class="font-normal text-customcolor3 text-md mb-4">Hermosa Elementary School.</p>
+
+                        <div class="relative">
+                            <h6 class="font-semibold text-customcolor3 text-md relative z-10"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">See the place here</a></h6>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">2014 – 2020</h4>
+
+                        <p class="font-normal text-customcolor3 text-md mb-4">Hanjin Integrated School.</p>
+
+                        <div class="relative">
+                            <h6 class="font-semibold text-customcolor3 text-md relative z-10"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">See the place here</a></h6>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">2020 – 2021</h4>
+
+                        <p class="font-normal text-customcolor3 text-md mb-4">Saint Nicholas Academy.</p>
+
+                        <div class="relative">
+                            <h6 class="font-semibold text-customcolor3 text-md relative z-10"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">See the place here</a></h6>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <h4 class="font-medium text-customcolor4 text-lg mb-4">2021 – Current</h4>
+
+                        <p class="font-normal text-customcolor3 text-md mb-4">Gordon College.</p>
+
+                        <div class="relative">
+                            <h6 class="font-semibold text-customcolor3 text-md relative z-10"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">See the place here</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section  id="experience" class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <h1 class="font-medium text-customcolor4 text-3xl md:text-4xl mb-5">Experience</h1>
+
+                <p class="font-normal text-customcolor3 text-xs md:text-base mb-20">Below is a summary of the places where I gained Experience</p>
+
+                <div class="flex flex-col lg:flex-row justify-between">
+
+                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+
+                        <h6 class="font-medium text-customcolor2 text-base uppercase">Place</h6>
+
+                        <p class="font-semibold text-customcolor3 text-base">Gordon College <span class="font-normal text-customcolor2">/ Olongapo City</span></p>
+
+                        <p class="font-semibold text-customcolor3 text-base">Comelec <span class="font-normal text-customcolor2">/ Olongapo City</span></p>
+
+                        <p class="font-semibold text-customcolor3 text-base">Hack4Gov <span class="font-normal text-customcolor2">/ DICT</span></p>
+
+                    </div>
+
+                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                        <h6 class="font-medium text-customcolor2 text-base uppercase">Position</h6>
+
+                        <p class="font-normal text-customcolor2 text-base">Student Researcher</p>
+
+                        <p class="font-normal text-customcolor2 text-base">On the Job Trainee</p>
+
+                        <p class="font-normal text-customcolor2 text-base">Participant</p>
+
+                    </div>
+
+                    <div class="space-y-8 md:space-y-16">
+                        <h6 class="font-medium text-customcolor2 text-base uppercase">Year</h6>
+
+                        <p class="font-normal text-customcolor2 text-base">2021 - Current</p>
+
+                        <p class="font-normal text-customcolor2 text-base">2022</p>
+
+                        <p class="font-normal text-customcolor2 text-base">2023 & 2024</p>
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id="achievements" class="py-10 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <h1 class="font-medium text-customcolor4 text-3xl md:text-4xl mb-5">Achievements</h1>
+
+                <p class="font-normal text-customcolor3 text-xs md:text-base mb-10 md:mb-20">Below is a summary of my achievements</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/LMS.jpg" alt="LMS Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/Olongapocom.png" alt="Olongapocom Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/Swiftcart.png" alt="Swiftcart Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+                        
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/GCACO.png" alt="GCACO Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+                        
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/Chatme.png" alt="Chatme Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/Pbp.png" alt="Pbp Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        
+                        <img src="../assets/image/Pip.png" alt="Pip Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+                    
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/Bswp.png" alt="Bswp Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/Adp.png" alt="Adp Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/Vdp.png" alt="Vdp Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/hack4gov.jpg" alt="Hack4Gov Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                    <div class="aspect-w-1 aspect-h-1">
+
+                        <img src="../assets/image/hack4gov3.jpg" alt="Hack4Gov3 Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+        
+
+
+
+        <footer id="contact" class="py-10 md:py-16 mb-20 md:mb-40 lg::mb-52">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="text-center">
+                    <h1 class="font-medium text-customcolor4 text-4xl md:text-5xl mb-5">Contact Me!</h1>
+
+                    <p class="font-normal text-customcolor2 text-md md:text-lg mb-20">I’m not currently taking on new client work but feel free to contact me for any <br> other inquiries.</p>
+
+                    <div class="flex items-center justify-center space-x-8">
+
+                        <a href="https://www.facebook.com/akositekong03" target="_blank" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+
+                            <ion-icon size="large" name="logo-facebook"></ion-icon>
+
+                        </a>
+    
+                        <a href="https://www.instagram.com/bites_za__dustooo/" target="_blank> class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+
+                            <ion-icon size="large"  name="logo-instagram"></ion-icon>
+
+                        </a>
+    
+                        <a href="https://www.linkedin.com/in/karluwu-sea-37593b323/" target="_blank" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+
+                            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+
+                        </a>
+    
+                        <a href="https://github.com/Dumgrammer" target="_blank" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
+
+                            <ion-icon size="large" name="logo-github"></ion-icon>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="../scripts/script.js"></script>
+        
+
+    </body>
+</html>
