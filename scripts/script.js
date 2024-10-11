@@ -7,7 +7,7 @@ document.getElementById("menu-btn").addEventListener("click", function() {
 });
 
 download.addEventListener('click', function(){
-    const file = "../files/Lacap, Karl Bastian Cunanan CV.pdf";
+    const file = "./files/Lacap, Karl Bastian Cunanan CV.pdf";
 
     const fileName = "CV";
 
